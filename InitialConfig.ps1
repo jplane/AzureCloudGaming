@@ -56,6 +56,7 @@ configuration CloudGamingClient
         InstallationPolicy = 'Trusted'
     }
 
+    <#
     foreach ($package in @('goggalaxy', 'steam', 'origin', 'uplay'))
     {
         PackageManagement $package
@@ -65,15 +66,14 @@ configuration CloudGamingClient
             DependsOn    = '[PackageManagementSource]Chocolatey'
         }
     }
-
-    <# Extra handling for parsec, which is currently beta    
+    #>
+    
     PackageManagement parsec
     {
         Name                 = 'parsec'
         ProviderName         = 'Chocolatey'
         DependsOn            = '[PackageManagementSource]Chocolatey'
-        RequiredVersion      = "1.0.0.20180613-beta"
-    }#>
+    }
 
     #endregion
 
@@ -132,11 +132,13 @@ configuration CloudGamingClient
         Uri             = 'https://software.muzychenko.net/trials/vac460.zip'
     }
 
+    <#
     xRemoteFile ParsecClient
     {
         DestinationPAth = 'C:\DscDownloads\Parsec.exe'
         Uri             = 'https://s3.amazonaws.com/parsec-build/package/parsec-windows.exe'
     }
+    #>
 
     Archive VACExtract
     {
