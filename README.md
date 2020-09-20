@@ -1,10 +1,7 @@
 # Azure Cloud Gaming
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fnyanhp%2FAzureCloudGaming%2Fmaster%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjplane%2FAzureCloudGaming%2Fmimir%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fnyanhp%2FAzureCloudGaming%2Fmaster%2Fazuredeploy.json" target="_blank">
-    <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
 Cloud gaming on Azure powered by NVidia Tesla and PowerShell!
@@ -15,9 +12,6 @@ This repository contains all you need to deploy a powerful VM on Azure to get yo
 
 - Standard NV6 VM (NVidia Tesla M60, 56 GiB RAM, 128 GiB SSD OS Disk)
 - Installed software
-  - Steam
-  - Origin
-  - UPlay
   - Parsec for game streaming ([Parsec](https://parsecgaming.com/))
 - Configuration
   - Auto-logon of user account
@@ -26,9 +20,6 @@ This repository contains all you need to deploy a powerful VM on Azure to get yo
 
 By deploying this template you invariably accept all license agreements and whatnot by:
 
-- Steam
-- Origin
-- Ubisoft
 - Parsec
 - NVidia
 - Eugene Muzychenko (Virtual Audio Cable)
